@@ -1,0 +1,6 @@
+alias rm='/bin/rm -i'
+alias mv='/bin/mv -i'
+alias cdbk='cd "$OLDPWD"'
+alias j=jobs
+alias mkdir='mkdir -p'
+alias ln='ln -v'
