@@ -1,0 +1,36 @@
+[color]
+  ui = auto
+  diff = auto
+[push]
+	default = current
+[merge]
+	tool = vimdiff
+[alias]
+  l = log --show-signature
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+  graph = log --all --graph --decorate --oneline -n30
+  mkbr = checkout -b
+  master = checkout master
+  vdiff = -c core.pager='gvim -R -' diff --color=never
+  vdm = -c core.pager='gvim -R -' diff --color=never master
+  new = !sh -c 'git log $1@{1}..$1@{0} "$@"'
+  p = push
+  co = checkout
+[core]
+	excludesfile = ~/.gitignore.global
+[url "git@github.com"]
+  insteadOf = gh
+[blame]
+  date = short
+[pager]
+	grep = 
+[commit]
+  template = ~/.gitmessage
+[gitsh]
+  defaultCommand = status -sb
+  noGreeting = true
+  prompt = "%D[%b]%c%#%w"
+[gh]
+	autoUpdate = never
+[fetch]
+	prune = true
