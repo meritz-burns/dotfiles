@@ -1,0 +1,5 @@
+# Shortcut for opening files quickly
+alias o='xdg-open'
+alias open='xdg-open'
+
+. /etc/profile.d/vte.sh
