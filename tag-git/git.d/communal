@@ -6,8 +6,8 @@
 [merge]
 	tool = vimdiff
 [alias]
-  l = log --show-signature
-	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+  l = log --show-signature --decorate
+  lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
   graph = log --all --graph --decorate --oneline -n30
   mkbr = checkout -b
   master = checkout master
