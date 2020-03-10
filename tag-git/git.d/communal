@@ -24,6 +24,7 @@
   date = short
 [pager]
 	grep = 
+  branch =
 [commit]
   template = ~/.gitmessage
 [gitsh]
