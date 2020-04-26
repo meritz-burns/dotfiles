@@ -23,10 +23,8 @@
 [blame]
   date = short
 [pager]
-	grep = 
+	grep =
   branch =
-[commit]
-  template = ~/.gitmessage
 [gitsh]
   defaultCommand = status -sb
   noGreeting = true
