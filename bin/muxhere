@@ -1,5 +1,11 @@
 #!/bin/sh
 
+# usage: muxhere [directory]
+
+if [ -n "$1" ]; then
+  cd "$1"
+fi
+
 session_name="$(basename $PWD | sed -e "s/\./-/g")"
 
 if [ -z "$TMUX" ]; then
