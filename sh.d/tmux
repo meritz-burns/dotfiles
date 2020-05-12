@@ -1,2 +1,1 @@
 alias newmux='tmux new-session -A -s'
-alias muxhere='tmux new-session -A -s $(basename $PWD | sed -e "s/\./-/g")'
