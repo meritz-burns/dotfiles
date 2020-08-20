@@ -1,5 +1,4 @@
 [color]
-  ui = auto
   diff = auto
 [push]
 	default = current
@@ -10,7 +9,6 @@
   lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
   graph = log --all --graph --decorate --oneline -n30
   mkbr = checkout -b
-  master = checkout master
   vdiff = -c core.pager='gvim -R -' diff --color=never
   vdm = -c core.pager='gvim -R -' diff --color=never master
   new = !sh -c 'git log $1@{1}..$1@{0} "$@"'
