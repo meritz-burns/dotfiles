@@ -10,7 +10,7 @@
   graph = log --all --graph --decorate --oneline -n30
   mkbr = checkout -b
   vdiff = -c core.pager='gvim -R -' diff --color=never
-  vdm = -c core.pager='gvim -R -' diff --color=never master
+  vdm = -c core.pager='gvim -R -' diff --color=never main
   new = !sh -c 'git log $1@{1}..$1@{0} "$@"'
   p = push
   co = checkout
