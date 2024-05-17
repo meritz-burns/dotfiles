@@ -2,6 +2,7 @@
   diff = auto
 [push]
 	default = current
+  autoSetupRemote = true
 [merge]
 	tool = vimdiff
 [alias]
